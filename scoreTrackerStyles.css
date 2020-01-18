@@ -1,3 +1,18 @@
-.align{
+.players{
+    margin-top: 5em;
     text-align: center;
+}
+#maxscore
+{
+    text-align: center;
+}
+.downscore
+{
+    margin-top: 1rem;
+}
+
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

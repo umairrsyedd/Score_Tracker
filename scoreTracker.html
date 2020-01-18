@@ -6,7 +6,7 @@
     <title>Score Tracker</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='scoreTrackerStyles.css'>
-    <script src='scoreTrackerScript.js'></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -17,18 +17,33 @@
         </div>
       
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter Number Of Rounds" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input  type="number" id="input"class="form-control" placeholder="Enter Number Of Rounds" aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
               <button class="btn btn-outline-primary" type="button" id="button-addon2">Set rounds</button>
             </div>
           </div>
+          <h3 id="maxscore">
+            Max Score 
+          </h3>
         <div class="row d-flex justify-content-around">
-            <div class="col-s-6 align">
+            <div class="col-s-6 players"">
                 Player 1
+                    <div class="modify">
+                        <button type="button" class="btn btn-success mt-3">Increment</button>
+                        <button type="button" class="btn btn-danger mt-3">Decrement</button>
+                        <h4 class="downscore"> Score : </h4>
+                    </div>
             </div>
-            <div class="col-s-6 align">
+            <div class="col-s-6  players">
                 Player 2
+                <div class="modify">
+                    <button type="button" class="btn btn-success mt-3">Increment</button>
+                    <button type="button" class="btn btn-danger mt-3 ">Decrement</button>
+                    <h4 class="downscore"> Score : </h4>
+                 </div>
             </div>
         </div>
+        </div>
+        <script src='scoreTrackerScript.js'></script>
 </body>
 </html>
