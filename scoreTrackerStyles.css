@@ -1,5 +1,5 @@
 .players{
-    margin-top: 5em;
+    margin-top: 3.5rem;
     text-align: center;
 }
 #maxscore
@@ -8,11 +8,17 @@
 }
 .downscore
 {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .reset{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.aligning{
+    text-align: center;
+    color:blue;
+    font-size: 3.5em;;
+
 }
